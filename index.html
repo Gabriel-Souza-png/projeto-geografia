@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mercúrio 3D</title>
+    
+    <script type="module" crossorigin src="/assets/index-C7x7Igwo.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-hbCzR0CF.css">
+  </head>
+
+  <body>
+
+    <div class="timeline">
+      <div class="timeline-heading">Linha do tempo de Mercúrio</div>
+      <input type="range" id="timeline" min="0" value="0">
+      <div class="timeline-points" id="timelinePoints" aria-hidden="true"></div>
+    </div>
+
+    <div class="event-card" id="eventCard">
+      <button id="toggleCardBtn" class="toggle-btn" aria-label="Fechar painel">×</button>
+      <h1 id="title"></h1>
+      <p id="date"></p>
+      <p id="description"></p>
+    </div>
+
+    <button id="openCardBtn" class="open-card hidden" aria-label="Abrir painel de eventos">Mostrar evento</button>
+    <button id="modeBtn" class="mode-btn" aria-label="Mudar modo">Mudar modo</button>
+
+    <div id="scan-overlay"></div>
+
+    <div class="info-panel collapsed" id="infoPanel">
+      <button id="infoToggle" class="info-toggle" aria-label="Abrir painel de informações">›</button>
+      <div class="info-panel-content">
+        <div class="info-box">
+          <strong>Créditos</strong>
+          <p><a href="https://freesound.org/people/belanhud/sounds/537937/">Space Ambient Noise Short.mp3</a> by <a href="https://freesound.org/people/belanhud/">belanhud</a> | License: <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a></p>
+        </div>
+        <div class="info-box">
+          <strong>Créditos</strong>
+          <p><a href="https://freesound.org/people/Robinhood76/sounds/231276/">04999 analog game hitting laser bonus.wav</a> by <a href="https://freesound.org/people/Robinhood76/">Robinhood76</a> | License: <a href="https://creativecommons.org/licenses/by-nc/4.0/">Attribution NonCommercial 4.0</a></p>
+        </div>
+        <div class="info-box">
+          <strong>Créditos</strong>
+          <p><a href="https://freesound.org/people/P%C3%B3l/sounds/385938/">S020_Rock_Impact_Mono.wav</a> by <a href="https://freesound.org/people/P%C3%B3l/">Pól</a> | License: <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons 0</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hintText">
+      Clique nos asteroides para destruí-los
+    </div>
+  </body>
+</html>
